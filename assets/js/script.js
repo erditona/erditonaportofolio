@@ -5,27 +5,9 @@ const elementToggleFunc = function (elem) {
   elem.classList.toggle("active");
 };
 
-// Sidebar variables
+// sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-// Filter select box variable
-const filterSelectBox = document.querySelector(".filter-select-box");
-
-// Function to hide filter select box on small screens
-const hideFilterSelectBox = function () {
-  if (window.innerWidth <= 768) {
-    filterSelectBox.style.display = "none";
-  } else {
-    filterSelectBox.style.display = "block";
-  }
-};
-
-// Initially hide filter select box based on screen size
-hideFilterSelectBox();
-
-// Event listener for window resize to dynamically hide/show filter select box
-window.addEventListener("resize", hideFilterSelectBox);
 
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () {
