@@ -505,6 +505,8 @@ main {
 
 .about-text p {
   margin-bottom: 15px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /**
@@ -855,6 +857,8 @@ main {
 }
 
 .timeline-text {
+  text-align: justify;
+  text-justify: inter-word;
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
